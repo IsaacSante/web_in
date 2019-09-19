@@ -1,0 +1,63 @@
+@font-face {
+    font-family; "glacialindifference";
+    src: url("fonts/GlacialIndifference-Regular.woff")
+     format("woff"); 
+}
+
+
+body, p, h1{
+    margin: 0;
+    padding: 0;
+    
+}
+
+ p {
+    line-height: 40pt;
+    
+}
+
+h1{
+    font-family: helvetica, sans-serif;
+    font-size: 20vw;
+    letter-spacing: -1.1vw;
+    text-align: left;
+    
+}
+
+#container {
+    text-align: center;
+}
+
+
+
+<style> iframe{ border: none;} </style> 
+
+.body-text {
+    font-family: "glacialindifference";
+    font-size: 30px;
+    max-width: 800px;
+    letter-spacing: .1px;
+    display: inline-block;
+    line-height: 1.1;
+    margin: 40px 30px; 
+
+}
+
+img {
+    
+    max-width: 20%;
+    max-height: 20%;
+}
+
+
+
+@media only screen and (max-width: 600px) 
+{
+    .body-text{
+        font-size: 18px;
+        letter-spacing: 0px; 
+        
+    }
+
+
+}
