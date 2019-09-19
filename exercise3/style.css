@@ -4,6 +4,8 @@
      format("woff"); 
 }
 
+body {background-color: oldlace;}
+
 
 body, p, h1{
     margin: 0;
