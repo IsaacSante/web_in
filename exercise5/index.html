@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Name </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+        
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  
+        
+        
+        <script>
+
+        $(document).ready (function)(){
+            $("mySlider").slider();
+            
+            
+        });
+        </script>
+
+      </head>
+    
+    <style>
+        
+        body{
+            background-color: salmon;
+            margin: 100px;
+            
+            
+
+}
+        
+        p{ 
+        color: white;
+            font-family: 'Mansalva', cursive;
+        }
+        
+        #box {
+            color: white;
+                top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+                text-align: center;
+/*                background-color: darkgray;*/
+                padding: 20px;
+                margin: 5px;
+                position: fixed; 
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 25px;
+                border: 2px solid #505050;
+
+        }
+        
+        
+        .text{
+            
+            left: 50%;
+            top: 30%;
+            display: inline-block;
+            position: absolute; 
+        }
+        
+      @font-face {
+    font-family: 'Mansalva', cursive;
+          src: url("fonts/Mansalva-Regular.ttf")
+
+    }
+        @font-face {
+        font-family: 'Notable', sans-serif;
+            src: url("fonts/Notable-Regular.ttf")
+            
+    
+    }
+        @font-face {
+    font-family: 'Cinzel', serif;
+            src: url("Cinzel-Regular.otf")
+    }
+        
+        
+        
+    
+    </style>
+    
+    
+    
+    
+    
+    <body id="whole">
+        
+        
+
+     <div id="text">
+                <p class="name" id="words">Isaac Sante</p>
+        </div>
+        <div id="box"> 
+            
+            <br>
+            <br>
+            
+             <select id="myFonts" onchange="fontFunction()"><option value="'Mansalva', cursive">Mansalva</option>
+        <option value="'Notable', sans-serif">Notable</option> 
+        <option value="'Cinzel', serif">Cinzel</option>
+        </select>
+            <br>
+              <br>
+              <br>
+            Size
+            <input id="size" type= "range" value="16" min="20" max="50"step="1" oninput= "sizeFunction()"> 
+              <br>
+              <br>
+            
+            <button onclick="myFunction1()">Pink</button>
+        <br>
+        <br>
+        
+        <button onclick="myFunction2()">Blue</button>
+            <br>
+            <br>
+            
+  
+
+            
+
+            
+            
+        
+        
+        </div>
+
+
+
+        
+        
+    </body>
+       
+    <script>
+
+    
+    </script>
+    
+    
+    
+      <script src="script.js"></script>  
+    <script src="jquery.js"> </script>
+    
+</html>

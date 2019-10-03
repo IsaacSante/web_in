@@ -1,59 +1,214 @@
- body {background-color: (51,0,0);}
+body {
+    
+    background-color: darkgray;
 
-
-body, p, h1{
     margin: 0;
     padding: 0;
+    font-family: monospace;
+    font-size: 20px;
     
 }
 
- p {
-    line-height: 40pt;
+p {
+    display: inline;
+    font-family: sans-serif;
+    font-size: 5vh;
+    color: white;
+  
+    margin left: 0;
+    position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.venn-container {
+  padding: 25px 25px 25px 200px;
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
+}
+.venncircle {
+  padding: 18px;
+  width: 180px;
+  height: 180px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 50%;
+  position: absolute;
+  
+    
+    -webkit-transition: color 0.5s linear, background-color 0.5s linear;
+  -moz-transition: color 0.5s linear, background-color 0.5s linear;
+  -o-transition: color 0.5s linear, background-color 0.5s linear;
+  
+    transition: color 0.5s linear, background-color 0.5s linear;
+}
+.venncircle > a {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: .004em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.venncirclft {
+  padding: 18px;
+  width: 180px;
+  height: 180px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: color 0.5s linear, background-color 0.5s linear;
+  -moz-transition: color 0.5s linear, background-color 0.5s linear;
+  -o-transition: color 0.5s linear, background-color 0.5s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
+  margin-left: -157px;
+  background-color: #093d5c;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background-color: rgba(9, 61, 92, 0.5);
+  z-index: 2;
+}
+.venncirclft > a {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: .004em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.venncirclft:hover {
+  z-index: 5;
+  background-color: #37688C;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background-color: rgba(55, 104, 140, 0.9);
+}
+.venncircrt {
+  padding: 18px;
+  width: 180px;
+  height: 180px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: color 0.5s linear, background-color 0.5s linear;
+  -moz-transition: color 0.5s linear, background-color 0.5s linear;
+  -o-transition: color 0.5s linear, background-color 0.5s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
+ margin-left: 17px;*
+  background-color: #5e577b;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background-color: rgba(94, 87, 123, 0.5);
+  z-index: 3;
+  text-align: right;
+}
+.venncircrt > a {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: .004em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.venncircrt:hover {
+  z-index: 5;
+  background-color: #625F75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background-color: rgba(98, 95, 117, 0.9);
+}
+.venncircbtm {
+  padding: 18px;
+  width: 180px;
+  height: 180px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: color 0.5s linear, background-color 0.5s linear;
+  -moz-transition: color 0.5s linear, background-color 0.5s linear;
+  -o-transition: color 0.5s linear, background-color 0.5s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
+  top: 90px;
+  margin-right: 100px;
+  margin-left: -70px;
+  text-align: center;
+  background-color: #627746;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background-color: rgba(98, 119, 70, 0.5);
+  z-index: 1;
+  position: relative;
+}
+
+.venncircbtm > a {
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: .004em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.venncircbtm:hover {
+  z-index: 5;
+  background-color: #3a4e20;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background-color: rgba(58, 78, 32, 0.9);
     
 }
 
-h1{
-    font-family: helvetica, sans-serif;
-    font-size: 20vw;
-    letter-spacing: -1.1vw;
-    text-align: left;
+}
+.venntxtrt {
+  margin: 0 0 0 87px;
+  display: inline-block;
+  position: relative;
+  top: 63px;
+  z-index: 5;
+    
+
+    
+    
     
 }
 
-#container {
-    text-align: center;
-}
 
-
-
-<style> iframe{ border: none;} </style> 
-
-.body-text {
-    font-family: "glacialindifference";
-    font-size: 30px;
-    max-width: 800px;
-    letter-spacing: .1px;
-    display: inline-block;
-    line-height: 1.1;
-    margin: 40px 30px; 
-
-}
-
-img {
+.vennleft {
+    width: 70%;
+  display: inline-block;
+  position: relative;
+  top: 63px;
+  z-index: 5; 
     
-    max-width: 20%;
-    max-height: 20%;
+    
+}
+
+.vennright{
+width: 70%;
+  display: inline-block;
+  position: relative;
+  top: 63px;
+  z-index: 5; 
 }
 
 
+.venntxtlft {
+  width: 70%;
+  display: inline-block;
+  position: relative;
+  top: 63px;
+  z-index: 5;
+}
 
-@media only screen and (max-width: 600px) 
-{
-    .body-text{
-        font-size: 18px;
-        letter-spacing: 0px; 
-        
-    }
-
-
+.venntxtbtm {
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+  position: relative;
+  top: 103px;
 }
